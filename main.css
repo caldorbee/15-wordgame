@@ -2,4 +2,47 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+ .wrong {
+}
+
+.text {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center; 
+}
+
+#btns {
+  margin-top: 2%;
+  margin-left: 25%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.reset {
+  margin-top: 2%;
+  margin-left: 43%;
+  padding: .5%;
+}
+
+p {
+  margin-right: 5%;
+}
+
+#guess-check {
+  width: 300px;
+
+}
+
+#incorrect {
+  color:red;
 }

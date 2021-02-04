@@ -13,17 +13,16 @@ const words = commonWords.filter (word => word.length > 2)
 // select random word from words
 function randomWord() {
     answer = words[Math.floor(Math.random() * words.length)]
+    console.log(answer)
 }
-
 // create buttons for user input
 function Btns() {
     let alphaBtns = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
-        `
-        <button
+        `<button
             class="btn" '` + letter + `' onClick="handleGuess ('` + letter + `')">
             ` + letter + `
-        </button>
-        `).join('')
+        </button>`).join('')
+        
     document.getElementById('btns').innerHTML = alphaBtns
 }
 
