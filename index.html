@@ -3,9 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hangman Game</title>
   </head>
   <body>
+    <div class='container'>
+      <h1 class='text'>Hangman</h1>
+      <div class='guesses'>Wrong Guesses: 
+        <span id='incorrect'>0</span> of <span id='max-wrong'></span>
+      </div>
+    </div>
+    <div class="text">
+      <p>Guess the word</p>
+      <p id='wordSpotlight'>The word to be guessed goes here</p>
+      <div id='btns'></div>
+      <button class="btn btn-info" onClick='reset()'>Reset</button>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
